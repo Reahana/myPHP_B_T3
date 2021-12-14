@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bootstrap -D3</title>
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <!-- ============ MENU Start ============ -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+            <a href="" class="navbar-brand">LOGO</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li><a href="" class="nav-link">HOME</a></li>
+                    <li><a href="" class="nav-link">ABOUT</a></li>
+                    <li class="dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICE</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item">Service One</a></li>
+                            <li><a href="" class="dropdown-item">Service Two</a></li>
+                            <li><a href="" class="dropdown-item">Service Three</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="nav-link">GALLERY</a></li>
+                    <li><a href="" class="nav-link">CONTACT</a></li>
+                    <li><a href="" class="nav-link">REGISTRATION</a></li>
+                    <li><a href="" class="nav-link" >LOGIN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- ============ MENU end ============ -->
+
+<!-- ==================Tabs  Start================== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a href="#home" data-toggle="tab"  class="nav-link ">Home</a></li>
+                            <li class="nav-item"><a href="#about" data-toggle="tab"  class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="#gallery" data-toggle="tab"  class="nav-link active">Gallery</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade " id="home">
+                                <h1>This is a Home page heading</h1>
+                                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, illo. Consequuntur earum voluptatibus sed cumque error architecto ad dolorum? Accusantium laborum nisi obcaecati. Placeat sit quis dolor. Dolor, fugiat nulla! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur animi doloremque tempora, fugit praesentium ut, deleniti distinctio, nam impedit nulla ipsam laborum. Deserunt voluptates, rem at ab illo adipisci consectetur?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas animi, unde dolorem ab consequatur ipsum! Molestiae ad reprehenderit aliquid dicta, exercitationem, eveniet dolor totam natus nostrum vitae optio velit accusamus?</p>
+                            </div>
+                            <div class="tab-pane fade" id="about">
+                                <h1>This is  About heading</h1>
+                                <p class="text-justify"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur animi doloremque tempora, fugit praesentium ut, deleniti distinctio, nam impedit nulla ipsam laborum. Deserunt voluptates, rem at ab illo adipisci consectetur?</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas animi, unde dolorem ab consequatur ipsum! Molestiae ad reprehenderit aliquid dicta, exercitationem, eveniet dolor totam natus nostrum vitae optio velit accusamus?</p>
+                            </div>
+                            <div class="tab-pane fade show  active" id="gallery">
+                                <h1>This is Gallery</h1>
+                                <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur animi doloremque tempora, fugit praesentium ut, deleniti distinctio, nam impedit nulla ipsam laborum. Deserunt voluptates, rem at ab illo adipisci consectetur?</p>
+                                <img src="./img/logo.png" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas animi, unde dolorem ab consequatur ipsum! Molestiae ad reprehenderit aliquid dicta, exercitationem, eveniet dolor totam natus nostrum vitae optio velit accusamus?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- =================  Tabs  End================== -->
+
+<!-- =================  Pills Start================== -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <ul class="nav nav-pills bg-secondary ">
+                        <li><a href="#homePill" data-toggle="pill" class="nav-link active rounded-0  text-white">Home</a></li>
+                        <li><a href="#aboutPill" data-toggle="pill" class="nav-link rounded-0 text-white">About</a></li>
+                        <li><a href="#contact" data-toggle="pill" class="nav-link rounded-0 text-white">Contact</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="homePill">
+                            <div class="card card-body">
+                                <h2>This is Home Page</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nesciunt corrupti, repellendus voluptatum laborum eius minima, quos obcaecati deserunt nulla amet ipsa quaerat magni. Labore iusto sit quidem officia! Facere!</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="aboutPill">
+                            <div class="card card-body">
+                                <h2>This is About Page</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nesciunt corrupti, repellendus voluptatum laborum eius minima, quos obcaecati deserunt nulla amet ipsa quaerat magni. Labore iusto sit quidem officia! Facere!</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact">
+                            <div class="card card-body">
+                                <h2>This is Contact Page</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nesciunt corrupti, repellendus voluptatum laborum eius minima, quos obcaecati deserunt nulla amet ipsa quaerat magni. Labore iusto sit quidem officia! Facere!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================= Pills End================== -->
+
+<!-- ================= Start================== -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <ul class="nav nav-pills">
+                        <li><a href="#popularProducts" data-toggle="pill" class="nav-link active">Popular Products</a></li>
+                        <li><a href="#newProducts" data-toggle="pill" class="nav-link">New Products</a></li>
+                        <li><a href="#bestSells" data-toggle="pill" class="nav-link">Best Selling Products</a></li>
+                        <li><a href="#featuredProducts" data-toggle="pill" class="nav-link">Featured Products</a></li>
+                    </ul>
+                    <div class="tab-content mt-4">
+                        <div class="tab-pane fade active show" id="popularProducts">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="./img/1.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#productModal" data-toggle="modal" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/2.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/3.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="#productModal" class="btn btn-primary" data-toggle="modal">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/4.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/5.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/6.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="newProducts">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="./img/7.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/8.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/9.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/10.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/11.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/12.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="bestSells">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="./img/13.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/14.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/15.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/16.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/17.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/18.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="featuredProducts">
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="./img/22.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/19.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/20.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/21.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/23.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="./img/24.jpg" alt="" class="card-img-top h-250">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Product Name</h4>
+                                            <p class="card-text">Price : 1500tk</p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <a href="" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================= End================== -->
+
+<!-- ================= Collapse Start================== -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="accordion" id="faqAccordion">
+                    <div class="card">
+                        <div class="card-header" data-toggle="collapse" data-target="#headerOne">
+                            <button type="button" class="btn btn-link btn-block">header one</button>
+                        </div>
+                        <div class="collapse show" id="headerOne" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ab commodi ipsam. Vitae doloremque, corporis repellat aspernatur vero quam adipisci et quaerat cumque sequi sit iusto fugit ab. Sed, atque!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" data-toggle="collapse" data-target="#headerTwo">
+                            <button type="button" class="btn btn-link btn-block">header two</button>
+                        </div>
+                        <div class="collapse" id="headerTwo" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut similique quaerat quos, esse voluptate praesentium! Quia, a, minima nam quae odit illo quod dolores consequuntur aliquam, molestiae facere quaerat est.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" data-toggle="collapse" data-target="#headerThree">
+                            <button type="button" class="btn btn-link btn-block">header three</button>
+                        </div>
+                        <div class="collapse" id="headerThree" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur nihil eos minima error aut iste esse rem quidem ut. Vero, quos quisquam? Repudiandae ipsam magni corporis, aliquam repellendus architecto!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" data-toggle="collapse" data-target="#headerFour">
+                            <button type="button" class="btn btn-link btn-block">header four</button>
+                        </div>
+                        <div class="collapse" id="headerFour" data-parent="#faqAccordion">
+                            <div class="card-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur nihil eos minima error aut iste esse rem quidem ut. Vero, quos quisquam? Repudiandae ipsam magni corporis, aliquam repellendus architecto!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================= Collapse End================== -->
+
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group row">
+                    <label for="" class="col-md-3"> First Name</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control ">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" id="lastName">
+                </div>
+                <div class="form-group">
+                    <label for="">District</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">Dhaka</option>
+                        <option value="">Barisal</option>
+                    </select>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- =================Product Modal Start================== -->
+    <div class="modal fade" id="productModal" data-backdrop="static" data-keyboard="false" >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Product Details</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="./img/3.jpg" class="w-100" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <table>
+                                    <tr>
+                                        <th>Product Name : </th>
+                                        <td> Neckless</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Product Price :</th>
+                                        <td>20000TK</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Catagory :</th>
+                                        <td>Jewellary</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Brand :</th>
+                                        <td>my brand</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Color :</th>
+                                        <td>White</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Size :</th>
+                                        <td>Large</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque inventore velit provident quod totam fugiat explicabo dolorum perferendis, laboriosam ab ad voluptatem quasi nulla, adipisci reiciendis exercitationem, consectetur dolores placeat?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="" class="btn btn-success">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- =================Product Modal End================== -->
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
