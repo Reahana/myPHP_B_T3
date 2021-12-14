@@ -1,0 +1,12 @@
+{
+  "name": "class36/class36",
+  "type": "project",
+  "description": " New PHP project with Database",
+  "keywords": [],
+  "license": "",
+  "require": {} ,
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {"App\\": "app/"}
+  }
+}
