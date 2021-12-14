@@ -1,0 +1,63 @@
+.banner{
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    height: 500px;
+    
+}
+.industry{
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    height: 500px;
+}
+.pricing{
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    height: 600px;
+}
+
+.h-180{
+    height: 50px;
+}
+footer{
+    background-color: #0E2034;
+    color:white
+}
+.bg-white{
+    background-color: white;
+}
+.text-lightred{
+    color:#F3505C;
+}
+.text-black{
+    color: black;
+}
+.text-blue{
+    color:#074685
+}
+.btn-blue{
+    background-color:#074685;
+    color:white;
+}
+.btn-blue:hover{
+    background-color:#06417c;
+    color:white;
+}
+.py-10{
+ padding-top: 100px;
+ padding-bottom: 100px;
+
+}
+.border-0{
+    border: 0;
+}
+.client-img img{
+    border-radius: 150%;
+    width: 50px;
+   
+}
+.client-img img:first-child{
+    margin-left: 500px;
+}
+.m-550{
+    margin-left: 550px;
+}
