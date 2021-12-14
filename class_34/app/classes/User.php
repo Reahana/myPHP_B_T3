@@ -8,7 +8,6 @@ class User
 {
     public $name;
     public $email;
-    public $data;
 
     public function __construct()
     {
@@ -24,7 +23,7 @@ class User
     }
     public function getAllUser()
     {
-        $this->data =  [
+        return [
             0=> [
                 'id' => 1,
                 'name' => 'rafi',
@@ -44,7 +43,5 @@ class User
                 'password'=> '666666'
             ],
         ];
-
-        return $this->data;
     }
 }

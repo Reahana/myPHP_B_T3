@@ -15,17 +15,14 @@ class Auth
   private $password;
   private $user;
   private $data;
-  private $datax;
 
-  public function __construct($data)
+  public function __construct($data=null)
   {
-
-      $this->email =$data['email'];
-//      if ($data)
-//      {
-//          $this->email =$data['email'];
-//          $this->password =$data['password'];
-//      }
+      if ($data)
+      {
+          $this->email =$data['email'];
+          $this->password =$data['password'];
+      }
   }
   public function index()
   {
@@ -33,10 +30,8 @@ class Auth
   }
   public  function login()
   {
-
-    $test = new User();
-      $this->data =  $test->getAllUser();
-
+    $this->user =new User();
+      $this->data =  $this->user->getAllUser();
 //     echo '<pre>';
 //     print_r($this->user);
 //      echo '</pre>';

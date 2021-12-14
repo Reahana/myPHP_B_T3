@@ -8,8 +8,6 @@ if (isset($_POST['btn']))
 {
     $auth = new Auth($_POST);
     $message=$auth->login();
-    include 'addUser.php';
-
 
 }
 //else if (isset($_GET['status'] )) {

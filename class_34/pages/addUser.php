@@ -53,7 +53,7 @@
                                 <div class="form-group row">
                                     <label for="" class="col-form-label col-md-3"> </label>
                                     <div class="col-md-9">
-                                        <input type="submit" name="btnAdd" value="SUBMIT" class="btn btn-outline-success btn-block"/>
+                                        <input type="submit" name="btnAdd" value="SAVE INFO" class="btn btn-outline-success btn-block"/>
                                     </div>
                                 </div>
                             </form>
