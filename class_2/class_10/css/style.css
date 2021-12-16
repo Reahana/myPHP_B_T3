@@ -1,0 +1,119 @@
+
+.box-one
+{
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: 100px;
+    /* background-color: red; */
+    /* transform: scale(1); */
+    /* transform: rotateY(0deg); */
+    transform: skewY(-10deg);
+    transition: all 1s;
+    background-image: url("../img/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box-one:hover{
+    /* transform: scale(1.5); */
+    /* transform: rotateY(90deg); */
+    transform: skewY(-20deg);
+    /* background-color: green; */
+}
+
+.side-one{
+    float: left;
+    width:50px;
+    height: 300px;
+    margin: 100px;
+    background-color: blue;
+    transform: skew(-20deg);
+}
+.side-two{
+    float: left;
+    width:50px;
+    height: 300px;
+    margin: 100px;
+    margin-left: -32px;
+    background-color: blue;
+    transform: skew(20deg);
+}
+.side-three{
+    float: left;
+    width:150px;
+    height: 50px;
+    margin-top: 250px;
+    margin-left: -250px;
+    background-color: blue;
+}
+
+
+.div-one
+{
+    height: 300px;
+    width: 200px;
+    background-color: hotpink;
+    float: left;
+    margin-top: 100px;
+    transform: skewY(30deg);
+}
+.div-two{
+    height: 300px;
+    width: 200px;
+    background-color: hotpink;
+    float: left;
+    margin-top: 100px;
+    transform: skewY(-30deg);
+    margin-left: 10px;
+}
+.div{
+    float: left;
+    height: 300px;
+    width: 400px;
+    /* background:linear-gradient(to left, red,rgb(219, 92, 7),green ,blue,hotpink,rgb(100, 0, 100),white); */
+    margin: 100px;
+    background: radial-gradient(red, green,blue,orange,pink,black);
+}
+
+.new-div{
+    float: left;
+    height: 400px;
+    width: 100%;
+    background: url("../img/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+}
+.new-div-one{
+    float: left;
+    height: 300px;
+    width: 100%;
+    background: hotpink;
+}
+.new-div-two{
+    float: left;
+    height: 300px;
+    width: 100%;
+    background: yellow;
+}
+
+.content{
+    color: white;
+    padding: 100px;
+   font-family: bangla;
+}
+
+@font-face {
+    font-family: bitm;
+    src: url("../fonts/Lora-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: bangla;
+    src: url("../fonts/Galada-Regular.ttf");
+}
+
+    
