@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+        <form action="" method="" id="registrationForm">
+            <table>
+                <tr>
+                    <th>First Name :</th>
+                    <td>
+                        <input type="text" id="firstName"/> <br/>
+                        <span id="firstNameError" class="red"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Last Name :</th>
+                    <td>
+                        <input type="text" id="lastName"/> <br/>
+                        <span id="lastNameError" class="red"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email :</th>
+                    <td>
+                        <input type="email" id="email"/> <br/>
+                        <span id="emailError" class="red"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Password :</th>
+                    <td>
+                        <input type="password" id="password"/> <br/>
+                        <label><input type="checkbox" id="showHide"/>Show</label> <br/>
+                        <span id="passwordError" class="red"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Confirm Password : </th>
+                    <td>
+                        <input type="password" id="confirmPassword"/> <br/>
+                        <span id="confirmPasswordError" class="red"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Phone Number :</th>
+                    <td>
+                        <input type="number" id="phoneNumber"/> <br/>
+                        <span id="phoneNumberError" class="red"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>District Name :</th>
+                    <td>
+                        <select name="" id="districtName">
+                            <option value="" disabled selected><---select a district---></option>
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Barisal">Barisal</option>
+                            <option value="Noakhali">Noakhali</option>
+                            <option value="Chandpur">Chandpur</option>
+                        </select>
+                        <br/>
+                        <span id="districtNameError" class="red"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Gender Info :</th>
+                    <td>
+                        <input type="radio" name="gender" value="male"/> Male 
+                        <input type="radio" name="gender" value="female"/> Female 
+                        <input type="radio" name="gender" value="other"/> Other
+                        <br/>
+                        <span id="genderError" class="red"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <input type="submit" id="btn" value="Submit"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+  
+
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
