@@ -1,0 +1,13 @@
+.main-image{
+    height: 300px;
+    width: 410px;
+}
+.sub-image{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.slider-image{
+    height: 650px;
+    width: 100%;
+}
