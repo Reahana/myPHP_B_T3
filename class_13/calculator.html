@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <h1>Basic Calculator</h1>
+    <table>
+        <tr>
+            <th>First Number</th>
+            <td><input type="number" id="firstNumber"/></td>
+        </tr>
+        <tr>
+            <th>Second Number</th>
+            <td><input type="number" id="secondNumber"/></td>
+        </tr>
+        <tr>
+            <th>Result</th>
+            <td><input type="number" readonly id="result"/></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td>
+                <input type="button" value="+" id="plusBtn" onclick="myCalculator('+')"/>
+                <input type="button" value="-" id="minusBtn" onclick="myCalculator('-')"/>
+                <input type="button" value="*" id="multiplicationBtn" onclick="myCalculator('*')"/>
+                <input type="button" value="/" id="divisionBtn" onclick="myCalculator('/')"/>
+                <input type="button" value="%" id="modulasBtn" onclick="myCalculator('%')"/>
+                <input type="button" id="resetBtn" value="reset"/>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        // var firstNumber = document.getElementById("firstNumber").value;
+        // var secondNumber = document.getElementById("secondNumber").value;
+        // var result = document.getElementById("result");
+        var resetBtn = document.getElementById('resetBtn')
+        resetBtn.onclick= function(){
+            document.getElementById("firstNumber").value = " ";
+            document.getElementById("secondNumber").value = " ";
+            document.getElementById("result").value = " ";
+        }
+        function myCalculator (oparator)
+        {
+            var firstNumber = Number(document.getElementById("firstNumber").value);
+            var secondNumber = Number(document.getElementById("secondNumber").value);
+            var result = 0;
+            switch(oparator)
+            {
+                 case '+':
+                    result = firstNumber + secondNumber;
+                    break;
+                 case '-':
+                    result = firstNumber - secondNumber;
+                    break;
+                case '*':
+                    result = firstNumber * secondNumber;
+                    break;  
+                case '/':
+                    result = firstNumber / secondNumber;
+                    break;  
+                 case '%':
+                    result = firstNumber % secondNumber;
+                    break;
+            }
+            document.getElementById("result").value =result;
+        }
+
+    </script>
+</body>
+</html>

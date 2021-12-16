@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JavaScript Event</title>
+    <style>
+        .test{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!-- 
+    <h1 id="bitm" class="">This is heading....</h1>
+
+    <input type="text" value="Habib" id="input"/>
+
+    <img src="" alt="" id="img"/> -->
+
+    <script>
+     
+        // var basis = document.getElementById('bitm')
+        // basis.onmouseover= function(){
+        //     basis.innerHTML = 'This is new content';
+        // }
+        // basis.onclick= function(){
+        //     basis.innerHTML = 'Hello Bangladesh';
+        // }
+        // basis.onmouseleave= function(){
+        //     basis.innerHTML = 'Today is Sunday......';
+        // }
+
+        // var reahana = document.getElementById('input');
+        // reahana.onmouseover= function(){
+        //     reahana.value="hello";
+        // }
+        // reahana.onmouseleave= function(){
+        //     reahana.value="finish";
+          
+        // }
+        // reahana.onclick= function(){
+        //     reahana.value=" ";
+        // }
+        // reahana.onkeyup= function(){
+        //     var h1 = document.getElementById('bitm');
+        //     h1.innerHTML=reahana.value;
+        // }
+        // reahana.onblur= function(){
+        //     if(reahana.value =='ok')
+        //     {
+        //         reahana.setAttribute('class','test');
+        //     }
+        //     else{
+        //         reahana.setAttribute('class',' ');
+        //     }
+        // }
+
+        //   ======image ========//
+    //     var basis= document.getElementById('img');
+    //   basis.setAttribute('src','img/rose.jpg');
+    //   console.log(basis.getAttribute('id'));
+     
+
+        // ======= input ======= //
+    //  var basis= document.getElementById('input');
+    //   basis.value = "Hello World"; 
+    //   basis.setAttribute('class','demo');
+
+    //   console.log(basis.getAttribute('id'));
+     
+    //  ======= with opening and closing tags ========//
+
+    //   var basis= document.getElementById('bitm');
+    //   basis.innerHTML = "Hello World";
+    //   basis.setAttribute('class','demo');
+    //   console.log(basis.getAttribute('id'));
+    //   console.log(basis.innerHTML);
+
+    // var btn = document.getElementById('btn')
+    // btn.onclick = function (){
+    //     // var firstName  =document.getElementById('firstName').value;
+    //     // var lastName  =document.getElementById('lastName').value;
+    //     // var fullName = firstName + lastName ;
+    //     // console.log(fullName);
+    // }
+    
+  
+    </script>
+ <table>
+    <tr>
+        <th>First Name</th>
+        <td><input type="text" name="first_name" id="firstName"/></td>
+    </tr>
+    <tr>
+        <th>Last Name</th>
+        <td><input type="text" name="last_name" id="lastName"/></td>
+    </tr>
+    <tr>
+        <th>Full Name</th>
+        <td><input type="text" name="full_name" id="fullName"/></td>
+    </tr>
+    <tr>
+        <th></th>
+        <td><input type="button" name="btn" id="btn" value="Submit"/></td>
+    </tr>
+ </table>
+
+<hr/>
+
+<table border="1" width="800">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Full Name</th>
+    </tr>
+        <td ><input type="text" id="inputOne"></td>
+        <td><input type="text" id="inputTwo"></td>
+        <td></td>
+    <tr>
+        <td height="50" id="celOne"></td>
+        <td id="celTwo"></td>
+        <td id="celThree"></td>
+    </tr>
+
+</table>
+
+ <script>
+     var btn = document.getElementById('btn')
+        btn.onclick = function (){
+        var firstName  =document.getElementById('firstName').value;
+        var lastName  =document.getElementById('lastName').value;
+        var fullName = firstName  + ' '+ lastName ;
+       document.getElementById('fullName').value = fullName;
+    }
+
+    var inputOne  = document.getElementById("inputOne");
+    inputOne.onkeyup= function(){
+            var celOne = document.getElementById("celOne");
+            celOne.innerHTML=inputOne.value;
+        }
+     var inputTwo  = document.getElementById("inputTwo");
+     inputTwo.onkeyup= function(){
+            var celTwo = document.getElementById("celTwo");
+            celTwo.innerHTML=inputTwo.value;
+        }
+        
+        inputTwo.onblur = function(){
+            var inputOne  = document.getElementById("inputOne").value;
+            var inputTwo  = document.getElementById("inputTwo").value;
+            var celThree = document.getElementById("celThree");
+            celThree.innerHTML = inputOne  + ' ' + inputTwo;
+        }
+ </script>
+</body>
+</html>
