@@ -1,0 +1,17 @@
+*
+{   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.table
+{
+    margin-top: 5%;
+    margin-left: 10%;
+    border: 7px solid burlywood;
+}
+th,td{
+    border:  2px solid burlywood;
+}
+#addBtn,.removeBtn {
+    padding: 2px 5px;
+}
