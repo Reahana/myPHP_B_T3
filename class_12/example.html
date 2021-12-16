@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Example of JavaScript</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            border: 1px solid gray;
+        }
+        .div-one{
+            height: 300px;
+            width: 300px;
+            border:  1px solid rgb(8, 4, 4);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button type="button" id="redBtn">Red</button>
+        <button type="button" id="blueBtn">Blue</button>
+        <button type="button" id="greenBtn">Green</button>
+        <button type="button" id="defaultBtn">default</button>
+    
+        <div class="div-one" id="divOne"></div>
+
+    </div>
+
+
+
+    <br/>
+    <br/>
+    <hr/>
+    <hr/>
+    <hr/>
+    <hr/>
+    <div>
+        <button type="button" id="showBtn">Show</button>
+        <button type="button" id="hideBtn">Hide</button>
+
+        <div class="box" id="container">
+            <h1>Hello BITM</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iste magnam beatae doloribus laborum numquam! Dolore, vero? Eos doloribus voluptatibus ullam nulla quam, fugiat aut saepe magni tempore quas beatae!</p>
+        </div>
+    </div>
+
+    <script>
+        var hideBtn = document.getElementById('hideBtn');
+        hideBtn.onclick = function() {
+            var container = document.getElementById('container');
+            container.style.display='none';
+        }
+        var showBtn = document.getElementById('showBtn');
+        showBtn.onclick = function() {
+            var container = document.getElementById('container');
+            container.style.display='block';
+        }
+
+
+
+
+        var redBtn = document.getElementById('redBtn');
+        redBtn.onclick =function(){
+            var divOne = document.getElementById('divOne')
+            divOne.style.backgroundColor ='red';
+            divOne.style.borderRadius = '50px';
+        }
+
+        var blueBtn = document.getElementById('blueBtn');
+        blueBtn.onclick =function(){
+            var divOne = document.getElementById('divOne')
+            divOne.style.backgroundColor ='blue';
+            divOne.style.borderRadius = '50px';
+        }
+
+        var greenBtn = document.getElementById('greenBtn');
+        greenBtn.onclick =function(){
+            var divOne = document.getElementById('divOne')
+            divOne.style.backgroundColor ='green';
+            divOne.style.borderRadius = '50px';
+        }
+        var defaultBtn = document.getElementById('defaultBtn');
+        defaultBtn.onclick =function(){
+            var divOne = document.getElementById('divOne')
+            divOne.style.backgroundColor ='black';
+            divOne.style.borderRadius = '50px';
+        }
+    </script>
+</body>
+</html>
